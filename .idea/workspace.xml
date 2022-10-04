@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/utils/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/utils/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBeanEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/img/log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/static/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/static/js/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FdIbVN2ZbzV2aPvTsBiOZyEx8G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "D:/JAVA_PROJECT/Hotel-Server/hotel-user/src/main/java/com/elio/hotel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "9e8da103834b568801953a885b675b2b"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\java\com\elio\hotel" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hotel-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elio.hotel.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="" />
+      <created>1664815608087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664815608087</updated>
+      <workItem from="1664815609751" duration="4014000" />
+      <workItem from="1664862537664" duration="6428000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
