@@ -1,11 +1,10 @@
 package com.elio.hotel.mapper;
 
 import com.elio.hotel.pojo.User;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public interface UserMapper {
@@ -42,7 +41,7 @@ public interface UserMapper {
      * @return
      */
     @Delete("delete from user_user where tel = #{tel}")
-    Integer deleteById(String tel);
+    Integer deleteByTel(String tel);
 
     /**
      *  查询相同名字的用户数量
@@ -59,5 +58,23 @@ public interface UserMapper {
      */
     @Select("select COUNT(*) from user_user where sex = #{sex}")
     Integer countSex(String sex);
+
+    /**
+     * 查询所有用户的信息
+     * @return 所用用户实例的 List 集合
+     */
+    @Select("select * from user_user")
+    List<User> getAll();
+
+    /**
+     * 更改用户信息
+     * @param user 更改后的用户信息实例
+     * @return 如果更改成功，则返回 1，否则返回 0
+     */
+    @Update("update user_user set name = #{name}, password = #{password}, tel = #{tel}, " +
+            " sex = #{sex} where tel = #{tel}")
+    Integer update(User user);
+
+
 
 }

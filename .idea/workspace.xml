@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="添加了DDL语句">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/user_user" beforeDir="false" afterPath="$PROJECT_DIR$/DB/user_user.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <updated>1664815608087</updated>
       <workItem from="1664815609751" duration="4014000" />
       <workItem from="1664862537664" duration="7992000" />
-      <workItem from="1664889170058" duration="1881000" />
+      <workItem from="1664889170058" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664890625060</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了DDL语句">
+      <created>1664891355730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664891355730</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
