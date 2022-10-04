@@ -1,6 +1,6 @@
-create table user_user
+create table  if not exists user_user
 (
-    id       serial
+    id      serial
         primary key,
     name     varchar,
     password varchar,
@@ -8,5 +8,3 @@ create table user_user
     sex      varchar
 );
 
-alter table user_user
-    owner to postgres;
