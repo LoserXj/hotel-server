@@ -15,8 +15,10 @@ public interface UserMapper {
     @Select("select * from user_user where tel=#{tel}")
     User findByUserTel(@Param("tel") String tel );
 
-   @Insert("insert into user_user (name,password,tel,sex) values (#{name},#{password},#{tel},#{sex})")
+    @Insert("insert into user_user (name,password,tel,sex) values (#{name},#{password},#{tel},#{sex})")
     void insertIntoUser(@Param("name")String name,@Param("password")String password,@Param("tel")String tel,@Param("sex")String sex);
+
+
 
 
 }
