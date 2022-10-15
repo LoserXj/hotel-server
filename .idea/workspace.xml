@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="添加了DDL语句">
-      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/homePage.html" afterDir="false" />
+    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="更新了common管理">
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBeanEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,7 +40,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FdIbVN2ZbzV2aPvTsBiOZyEx8G" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +64,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "340b57d415a54ae6127968b463c513d1"
   }
 }]]></component>
@@ -80,7 +95,13 @@
       <updated>1664815608087</updated>
       <workItem from="1664815609751" duration="4014000" />
       <workItem from="1664862537664" duration="7992000" />
-      <workItem from="1664889170058" duration="3751000" />
+      <workItem from="1664889170058" duration="3807000" />
+      <workItem from="1665214728752" duration="229000" />
+      <workItem from="1665216066134" duration="172000" />
+      <workItem from="1665218951275" duration="1081000" />
+      <workItem from="1665325049966" duration="436000" />
+      <workItem from="1665503995594" duration="605000" />
+      <workItem from="1665810947522" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -117,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664891677432</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加了由登陆页面到主页面的跳转">
+      <created>1664893001814</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664893001814</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,17 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven插件管理以及包管理更加规范，实现了登录功能和注册功能" />
     <MESSAGE value="添加了DDL语句" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了DDL语句" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="增加了由登陆页面到主页面的跳转" />
+    <MESSAGE value="更新了common管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了common管理" />
   </component>
 </project>

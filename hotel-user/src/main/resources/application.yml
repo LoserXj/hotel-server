@@ -8,10 +8,10 @@ spring:
     driver-class-name: org.postgresql.Driver
   thymeleaf:
     cache: false
-mybatis-plus:
-  configuration:
-    map-underscore-to-camel-case: true
-  type-aliases-package: com.elio.hotel.pojo
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  type-aliases-package: com.elio.hotel.pojo
 logging:
   level:
    com.elio: debug

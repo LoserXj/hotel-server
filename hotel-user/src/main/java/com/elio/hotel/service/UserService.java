@@ -1,10 +1,12 @@
 package com.elio.hotel.service;
 
+import com.elio.hotel.domain.User;
 import com.elio.hotel.mapper.UserMapper;
-import com.elio.hotel.pojo.User;
+
+import com.elio.hotel.result.RespBean;
 import com.elio.hotel.utils.CookieUtil;
 import com.elio.hotel.utils.UUIDUtil;
-import com.elio.hotel.vo.RespBean;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +23,7 @@ public class UserService {
 
     private String salt="1a2b3c4d";
 
-    public RespBean verifyLogin(String tel,String password,HttpServletRequest request,HttpServletResponse response){
+    public RespBean verifyLogin(String tel, String password, HttpServletRequest request, HttpServletResponse response){
         User user=userMapper.findByUserTel(tel);
         if(user==null){
             return RespBean.login_error_not_exists_user();

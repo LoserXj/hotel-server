@@ -1,4 +1,6 @@
-package com.elio.hotel.vo;
+package com.elio.hotel.result;
+
+
 
 import lombok.Data;
 import lombok.Getter;

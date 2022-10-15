@@ -1,8 +1,10 @@
 package com.elio.hotel.controller;
 
-import com.elio.hotel.pojo.User;
+
+import com.elio.hotel.domain.User;
+import com.elio.hotel.result.RespBean;
 import com.elio.hotel.service.UserService;
-import com.elio.hotel.vo.RespBean;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -53,8 +55,6 @@ public class UserController {
     public RespBean register(User user){
         return userService.register(user);
     }
-
-
 
 
 }

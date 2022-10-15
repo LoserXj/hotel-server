@@ -1,6 +1,6 @@
 package com.elio.hotel;
 
-import com.elio.hotel.pojo.User;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

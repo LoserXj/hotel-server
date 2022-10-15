@@ -1,4 +1,4 @@
-package com.elio.hotel.vo;
+package com.elio.hotel.result;
 
 public enum RespBeanEnum {
     LOGIN_SUCCESS(200, "登陆成功"),

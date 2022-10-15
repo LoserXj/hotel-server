@@ -1,6 +1,7 @@
 package com.elio.hotel.mapper;
 
-import com.elio.hotel.pojo.User;
+
+import com.elio.hotel.domain.User;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
 

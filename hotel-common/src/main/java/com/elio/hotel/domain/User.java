@@ -1,4 +1,4 @@
-package com.elio.hotel.pojo;
+package com.elio.hotel.domain;
 
 import lombok.Data;
 
