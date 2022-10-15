@@ -1,6 +1,13 @@
 server:
   port: 8081
+
+
 spring:
+  application:
+    name: userService
+  cloud:
+    nacos:
+      server-addr: localhost:8848
   datasource:
     url: jdbc:postgresql://localhost:5432/hotel_user
     username: postgres
@@ -8,6 +15,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   thymeleaf:
     cache: false
+
 #mybatis-plus:
 #  configuration:
 #    map-underscore-to-camel-case: true

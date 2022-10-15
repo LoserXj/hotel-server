@@ -15,3 +15,7 @@
   - img包管理用到的图片。
 hotel-common:公共的插件，比如说所有的微服务模块都需要用到mybatis-plus就直接把maybatis-plus写在这里，所有的微服务pom直接引用这里的插件。
 
+
+## log日志记录 2022-10-15
+
+更新了nacos注册中心，nacos压缩包在lib文件夹下

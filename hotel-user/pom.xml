@@ -12,8 +12,8 @@
     <artifactId>hotel-user</artifactId>
 
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
      <dependencies>
@@ -55,6 +55,8 @@
              <artifactId>spring-boot-starter-thymeleaf</artifactId>
 
          </dependency>
+
+
 
      </dependencies>
 

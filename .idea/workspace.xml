@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="更新了common管理">
-      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/nacos-server-1.4.1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/nacos简单安装.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/vo/RespBeanEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +58,30 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "D:/JAVA_PROJECT/Hotel-Server/hotel-user/src/main/java/com/elio/hotel",
+    "last_opened_file_path": "D:/JAVA_PROJECT/Hotel-Server/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.20410156",
+    "project.structure.side.proportion": "0.45331696",
     "spring.configuration.checksum": "340b57d415a54ae6127968b463c513d1"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\lib" />
       <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\java\com\elio\hotel" />
       <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\resources" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -101,7 +108,7 @@
       <workItem from="1665218951275" duration="1081000" />
       <workItem from="1665325049966" duration="436000" />
       <workItem from="1665503995594" duration="605000" />
-      <workItem from="1665810947522" duration="1289000" />
+      <workItem from="1665810947522" duration="7164000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -145,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664893001814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新了common管理">
+      <created>1665812274047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665812274047</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
