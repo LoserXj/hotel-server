@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>chat UI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="ch.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <script type="text/javascript">
+      var Words;
+	  var TalkWords;
+	  var TalkSub;
+	  var member;
+	  var socket=new WebSocket("ws://127.0.0.1:8041/socket/bbb/aaa");
+	  function InputPress() {
+			if (event.keyCode == 13) {
+				update();
+				var msg=document.getElementById("talkwords").value;
+				socket.send(msg);
+				document.getElementById("talkwords").value="";
+			}
+		}
+	  socket.onmessage=function(msg){
+		   var obj = JSON.parse(msg.data);
+		   if(obj.users){
+		      var arr = obj.users;
+		      for (var i in arr){
+		         str = '<div style="padding: 10px 0"><span>' +'&nbsp&nbsp'+ arr[i].username +'</span>&nbsp&nbsp<i class="fa fa-commenting-o" style="cursor: pointer"></i></div>' ;
+		         member.innerHTML=member.innerHTML+str;
+		      }
+		   }else{
+		      var data = obj.text;
+		      str = '<div class="atalk"><span>' + data +'</span></div>' ;
+		      Words.innerHTML=Words.innerHTML+str;
+		   }
+	  }
+      function update(){
+         var str = "";
+         if(TalkWords.value == ""){
+		    // 消息为空时弹窗
+			alert("消息不能为空");
+			return;
+		 }
+		 str = '<div class="btalk"><span>' + TalkWords.value +'</span></div>' ;
+		 Words.innerHTML = Words.innerHTML + str;
+      }
+      window.onload=function(){
+         Words = document.getElementById("words");
+         TalkWords = document.getElementById("talkwords");
+         TalkSub = document.getElementById("talksub");
+         member=document.getElementById("online");
+         TalkSub.onclick = function(){
+				update();
+				var msg=document.getElementById("talkwords").value;
+				socket.send(msg);
+				document.getElementById("talkwords").value="";
+            }
+      }
+  </script>
+</head>
+<script>
+    document.getElementsByTagName('body').height=window.innerHeight;
+</script>
+<body class="box">
+<div class="leftbar">
+  <ul>
+    <li><i class="fas fa-user"></i></li>
+    <li><i class="fas fa-users"></i></li>
+    <li><i class="fas fa-smile"></i></li>
+    <li><i class="fas fa-envelope"></i></li>
+    <li><i class="fas fa-bell"></i></li>
+    <li><i class="fas fa-calendar-alt"></i></li>
+    <li><i class="fas fa-power-off"></i></li>
+  </ul>
+</div>
+<div class="container" >
+  <div class="chatbox">
+    <div class="chatleft">
+      <div class="top">
+        <i class="fas fa-bars" style="font-size: 1.4em"></i>
+        <input type="text" placeholder="search" style="width: 140px; height: 36px; margin-left: 25px;">
+        <button class="searchbtn"></style><i class="fas fa-search"></i></button>
+      </div>
+      <div class="center" id="online">
+
+      </div>
+    </div>
+    <div class="chatright">
+      <div class="top">
+        <span style="margin-left: 20px;">Chatting room</span>
+        <i class="fas fa-ellipsis-v" style="font-size: 1.4em; position: absolute; right: 20px; color: gray;"></i>
+      </div>
+      <div class="center" id="words">
+
+      </div>
+      <div class="footer">
+        <textarea maxlength="800" rows="5" cols="40" style="width: 100%; resize: none; border: none; " placeholder="请在此输入要发送的内容..." id="talkwords" onkeypress="InputPress()"></textarea>
+        <button class="sendbtn" id="talksub">发送</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

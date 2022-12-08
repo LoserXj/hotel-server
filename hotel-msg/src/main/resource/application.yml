@@ -1,0 +1,19 @@
+server:
+  port: 8041
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: txl20020705@
+    driver-class-name: org.postgresql.Driver
+  thymeleaf:
+    cache: false
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.hotel.domain
+logging:
+  level:
+    com.elio: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
