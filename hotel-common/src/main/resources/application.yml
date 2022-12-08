@@ -1,0 +1,26 @@
+server:
+  port: 7781
+
+spring:
+  application:
+    name: hotelService
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotel_hotel
+    username: postgres
+    password: xujian123
+    driver-class-name: org.postgresql.Driver
+  thymeleaf:
+    cache: false
+
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  type-aliases-package: com.elio.hotel.pojo
+logging:
+  level:
+   com.elio: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS

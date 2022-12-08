@@ -6,6 +6,7 @@ import com.elio.hotel.result.RespBean;
 import com.elio.hotel.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@Controller
+
+@RestController
 @Slf4j
 @RequestMapping("/user")
 public class UserController {
@@ -26,10 +28,12 @@ public class UserController {
     public String loginPage(){
         return "login";
     }
-    @GetMapping("/login")
+    @RequestMapping ("/login")
     @ResponseBody
     public RespBean verify(User user, HttpServletResponse response, HttpServletRequest request){
+
       return userService.verifyLogin(user.getTel(),user.getPassword(),request,response);
+
     }
 
     /**
@@ -47,14 +51,15 @@ public class UserController {
         model.addAttribute("userInfo",user);
         return "homePage";
     }
-
-
-
-    @PostMapping("/register")
+    @RequestMapping ("/register")
     @ResponseBody
     public RespBean register(User user){
         return userService.register(user);
     }
 
 
+
+
 }
+
+

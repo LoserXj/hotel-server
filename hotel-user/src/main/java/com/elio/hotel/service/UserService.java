@@ -1,7 +1,7 @@
 package com.elio.hotel.service;
 
 import com.elio.hotel.domain.User;
-import com.elio.hotel.mapper.UserMapper;
+import com.elio.hotel.dao.UserMapper;
 
 import com.elio.hotel.result.RespBean;
 import com.elio.hotel.utils.CookieUtil;
@@ -9,6 +9,7 @@ import com.elio.hotel.utils.UUIDUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,6 +21,9 @@ public class UserService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     private String salt="1a2b3c4d";
 
@@ -47,7 +51,13 @@ public class UserService {
         String dbPassword=inputPassToDbPass(user.getPassword(),salt);
         user.setPassword(dbPassword);
         userMapper.insertIntoUser(user.getName(),user.getPassword(),user.getTel(),user.getSex());
+        User user2=userMapper.findByUserTel(user.getTel());
+        insertUserAccount(user2);
         return RespBean.register_success();
+    }
+
+    public void insertUserAccount(User user){
+        restTemplate.postForObject("http://payService/nacos/insertUserAccount",user,Integer.class);
     }
 
 }

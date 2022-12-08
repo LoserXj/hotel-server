@@ -1,4 +1,4 @@
-package com.elio.hotel.mapper;
+package com.elio.hotel.dao;
 
 
 import com.elio.hotel.domain.User;

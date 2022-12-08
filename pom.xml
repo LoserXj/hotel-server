@@ -12,6 +12,10 @@
         <module>hotel-user</module>
         <module>hotel-common</module>
         <module>hotel-pay</module>
+        <module>hotel-hotel</module>
+        <module>hotel-room</module>
+        <module>hotel-msg</module>
+        <module>hotel-eval</module>
     </modules>
 
     <properties>

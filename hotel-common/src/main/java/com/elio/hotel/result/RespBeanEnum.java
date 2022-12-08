@@ -9,6 +9,21 @@ public enum RespBeanEnum {
     REGISTER_ERROR(203,"该用户名已存在"),
 
     REGISTER_SUCCESS(204,"注册成功"),
+
+    OPERATION_SUCCESS(205,"操作成功"),
+    OPERATION_ERROR(206,"操作失败"),
+
+    RESERVE_SUCCESS(207,"预定成功"),
+    RESERVE_ERROR(208,"预定失败，原因可能是这个房间已经被别人给预定了"),
+
+    PASSWORD_ERROR(209,"密码错误，请重新输入密码"),
+    PASSWORD_SUCCESS(210,"密码正确"),
+
+    PAY_ERROR(211,"支付失败"),
+    PAY_SUCCESS(212,"支付成功"),
+    REFUND_SUCCESS(213,"退款成功"),
+    REFUND_ERROR(214,"申请成功,请耐心等待")
+
     ;
 
     private RespBeanEnum(Integer code, String message) {

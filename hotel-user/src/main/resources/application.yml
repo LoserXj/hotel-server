@@ -1,7 +1,6 @@
 server:
   port: 8081
 
-
 spring:
   application:
     name: userService
@@ -25,3 +24,8 @@ logging:
    com.elio: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+#开启饥饿加载
+ribbon:
+  eager-load:
+    enabled: true
+    clients: payService # 项目启动时直接去拉取userservice的集群，多个用","隔开

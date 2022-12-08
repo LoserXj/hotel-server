@@ -4,17 +4,135 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="更新了common管理">
-      <change afterPath="$PROJECT_DIR$/hotel-pay/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-pay/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nacos-server-1.4.1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nacos简单安装.md" afterDir="false" />
+    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="更新了nacao注册服务中心">
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Evaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/ManagerAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/OrderRefund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/OrderStatusLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/RoomBookTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/RoomType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/HotelApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/controller/HotelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/controller/NacosHotelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/dao/HotelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/service/HotelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/PayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/NacosOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/ManagerAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/OrderLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/RefundDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/UserAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/exception/PlaceOrderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/RoomApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/NacosRoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomBookTimeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/service/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-room/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/NacosUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/assets/images/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/assets/style/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/components/HotelsCity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/components/SelectHotel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/Beijing.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/Guangzhou.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/Hangzhou.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/None.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/Shanghai.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Cities/Shenzhen.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/templates/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG211160583703.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG211296056848.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG211304455600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG211354945565.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG21gic15073888.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/VCG21gic15551457.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/pool-bar-g198c00c5f_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/展厅图片/singapore-ge86446aaa_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211162322412.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211280325378.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211304455532.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211330583269.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211337386952.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211355646918.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG211360561041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/VCG41N1195967305.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/bedroom-g230ecebee_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/hotel-g21c49307e_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/inner-space-gf708a923a_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/living-room-ge90df8f2b_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/room-g2df031d3a_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/房间图片/room-ga5e4cb807_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/014abc5b655cbfa801206a35c192e9.jpg@1280w_1l_2o_100sh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/20160829171230735XofdtLm_thum_mid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/201906111749568712N9bxRt_thum_mid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/307d0623d6221b1dc77e8f016521d912.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/5a02685a2ba0c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/D6133B1168794551B551559101A67B7D.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/R-C.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/c9559d9f0748e064.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/ef19a8d76387f29d3d752d5729f8ceb1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo/酒店图片/t018a6b3bef2409c58e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/images/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/img/280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/img/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/img/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/assets/style/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/Hotels/HotelFirst.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/HotelsByCity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/Manager/CheckRecord.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/Manager/ModifyRoom.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/SelectHotel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/components/list/List.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Function/CustomerService.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Function/Evaluation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Function/OrderForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Manager/ManagerMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project1/project/src/views/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -26,8 +144,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,34 +164,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "D:/JAVA_PROJECT/Hotel-Server/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.20410156",
-    "project.structure.side.proportion": "0.45331696",
-    "spring.configuration.checksum": "340b57d415a54ae6127968b463c513d1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-13&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA_PROJECT/Hotel-Server/vue_project1/project/src/components/list&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.20410156&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45331696&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e4b33164bb58ecd59edc95e3d7a14073&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JAVA_PROJECT\\Hotel-Server\\vue_project\\node_modules\\typescript\\lib&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;D:/JAVA_PROJECT/Hotel-Server/vue_project/src/package.json&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\lib" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\java\com\elio\hotel" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-user\src\main\resources" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\components\list" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\assets" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\photo" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-room\src\main\resources" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-pay\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\components\list" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\temp" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\assets" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\components" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,7 +215,59 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.test">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elio.hotel.test.test" />
+      <module name="hotel-hotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elio.hotel.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hotel-hotel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elio.hotel.HotelApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elio.hotel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hotel-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elio.hotel.PayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elio.hotel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hotel-room" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elio.hotel.RoomApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elio.hotel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hotel-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.elio.hotel.UserApplication" />
@@ -91,6 +275,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PayApplication" />
+        <item itemvalue="Spring Boot.HotelApplication" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Spring Boot.RoomApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +300,29 @@
       <workItem from="1665218951275" duration="1081000" />
       <workItem from="1665325049966" duration="436000" />
       <workItem from="1665503995594" duration="605000" />
-      <workItem from="1665810947522" duration="7164000" />
+      <workItem from="1665810947522" duration="7879000" />
+      <workItem from="1665822685595" duration="6000" />
+      <workItem from="1665823274460" duration="4914000" />
+      <workItem from="1665835825490" duration="614000" />
+      <workItem from="1665838887572" duration="618000" />
+      <workItem from="1666251505432" duration="529000" />
+      <workItem from="1667292489441" duration="47000" />
+      <workItem from="1667458206575" duration="7000" />
+      <workItem from="1668174302267" duration="286000" />
+      <workItem from="1668177330999" duration="579000" />
+      <workItem from="1668186357499" duration="2117000" />
+      <workItem from="1668336389495" duration="5701000" />
+      <workItem from="1669815203974" duration="2606000" />
+      <workItem from="1669895879398" duration="780000" />
+      <workItem from="1670137300535" duration="5692000" />
+      <workItem from="1670153714948" duration="13093000" />
+      <workItem from="1670169084735" duration="4587000" />
+      <workItem from="1670227744477" duration="18707000" />
+      <workItem from="1670249836107" duration="5299000" />
+      <workItem from="1670256971942" duration="2361000" />
+      <workItem from="1670306101612" duration="19435000" />
+      <workItem from="1670418967948" duration="9480000" />
+      <workItem from="1670465863457" duration="6413000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -159,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665812274047</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新了nacao注册服务中心">
+      <created>1665819612641</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665819612641</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +402,23 @@
     <MESSAGE value="添加了DDL语句" />
     <MESSAGE value="增加了由登陆页面到主页面的跳转" />
     <MESSAGE value="更新了common管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了common管理" />
+    <MESSAGE value="更新了nacao注册服务中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了nacao注册服务中心" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/controller/HotelController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
