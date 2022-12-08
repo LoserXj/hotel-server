@@ -4,7 +4,10 @@ import ElementPlus from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 import "./assets/style/global.css";
 import router from './router/index'
+import axios from "axios";
+axios.defaults.baseURL = 'http://www.kymid.com/testphp/public/index.php/api/'
 
-//createApp.prototype.$axios = axios
-createApp(App).use(ElementPlus).use(router).mount('#app')
+const app = createApp(App)
+app.config.globalProperties.$http=axios
+app.use(ElementPlus).use(router).mount('#app')
 

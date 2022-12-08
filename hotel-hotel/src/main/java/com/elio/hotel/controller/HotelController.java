@@ -2,6 +2,7 @@ package com.elio.hotel.controller;
 
 
 import com.elio.hotel.domain.Hotel;
+import com.elio.hotel.pojo.NewHotel;
 import com.elio.hotel.result.RespBean;
 import com.elio.hotel.service.HotelService;
 import lombok.extern.slf4j.Slf4j;
@@ -22,21 +23,27 @@ public class HotelController {
 
     @RequestMapping("/AllHotel")
     public List<Hotel> getAllHotel(){
-
         return hotelService.selectAllHotel();
     }
-
     @RequestMapping("/getHotel")
-    public List<Hotel> getHotel(@Param("city")String city,@Param("name")String name){
+    public List<NewHotel> getHotel(@Param("city")String city, @Param("name")String name){
         if (city.equals("全部") && name==null){
-            return hotelService.selectAllHotel();
+            List<Hotel> hotels= hotelService.selectAllHotel();
+
+           return hotelService.getNewHotel(hotels);
         }
         else if (!city.equals("全部") && name==null){
-            return hotelService.selectByCity(city);
+            List<Hotel> hotels= hotelService.selectByCity(city);
+
+            return hotelService.getNewHotel(hotels);
         }else if(!city.equals("全部") && !name.equals("")){
-            return hotelService.selectByCityAndName(name,city);
+            List<Hotel> hotels= hotelService.selectByCityAndName(name,city);
+
+            return hotelService.getNewHotel(hotels);
         }else {
-            return hotelService.selectByName(name);
+            List<Hotel> hotels= hotelService.selectByName(name);
+
+            return hotelService.getNewHotel(hotels);
         }
     }
 

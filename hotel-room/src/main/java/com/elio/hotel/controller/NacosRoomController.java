@@ -1,5 +1,6 @@
 package com.elio.hotel.controller;
 
+import com.elio.hotel.domain.Hotel;
 import com.elio.hotel.domain.Room;
 import com.elio.hotel.domain.RoomBookTime;
 import com.elio.hotel.domain.RoomType;
@@ -32,6 +33,11 @@ public class NacosRoomController {
     @RequestMapping("/selectRoomBookTimeByRoomId")
     public RoomBookTime selectRoomBookTimeByRoomId(@RequestBody Room room){
         return roomService.selectRoomBookTimeByRoomId(room.getId());
+    }
+
+    @RequestMapping("/selectRoomTypeByHotelIdAndType")
+    public RoomType selectRoomTypeByHotelIdAndType(@RequestBody Hotel hotel){
+        return roomService.selectRoomTypeByHotelIdAndType(hotel.getId());
     }
 
 

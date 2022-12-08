@@ -1,10 +1,16 @@
 package com.elio.hotel.service;
 
+import com.elio.hotel.dao.HotelCollectionDao;
 import com.elio.hotel.dao.HotelDao;
+import com.elio.hotel.domain.Collection;
 import com.elio.hotel.domain.Hotel;
+import com.elio.hotel.domain.RoomType;
+import com.elio.hotel.domain.User;
+import com.elio.hotel.pojo.NewHotel;
 import com.elio.hotel.result.RespBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,12 +18,19 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
 public class HotelService {
     @Autowired
     private HotelDao hotelDao;
+
+    @Autowired
+    private HotelCollectionDao hotelCollectionDao;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     public List<Hotel> selectAllHotel() {
         return hotelDao.selectAllHotel();
@@ -90,5 +103,52 @@ public class HotelService {
         hotelDao.addHotel(hotel);
         return flag;
     }
+
+
+    public List<Collection> selectCollectionByUserTel(String user_tel){
+        return hotelCollectionDao.selectCollectionByUserTel(user_tel);
+    }
+
+    public User getUser(){
+        return restTemplate.getForObject("http://userService/nacos/getUser",User.class);
+    }
+
+    public RoomType selectRoomTypeByHotelIdAndType(Hotel hotel){
+        return restTemplate.postForObject("http://roomService/nacos/selectRoomTypeByHotelIdAndType",hotel,RoomType.class);
+    }
+    public List<NewHotel> getNewHotel(List<Hotel> hotels) {
+        User user = getUser();
+        List<Collection> collections = selectCollectionByUserTel(user.getTel());
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        for (Collection collection : collections) {
+            hashMap.put(collection.getHotel_id(),1);
+        }
+        List<NewHotel> newHotels=new ArrayList<>();
+        for(Hotel hotel : hotels){
+            boolean is_collection=false;
+            RoomType roomType=selectRoomTypeByHotelIdAndType(hotel);
+            double price=roomType.getPrice();
+            if(hashMap.containsKey(hotel.getId())){
+                is_collection=true;
+            }
+            newHotels.add(setNewHotel(hotel,price,is_collection));
+        }
+        return newHotels;
+    }
+
+    public NewHotel setNewHotel(Hotel hotel,Double price,boolean is_collection){
+        NewHotel newHotel=new NewHotel();
+        newHotel.setId(hotel.getId());
+        newHotel.setIs_collection(is_collection);
+        newHotel.setAddress(hotel.getAddress());
+        newHotel.setMin_price(price);
+        newHotel.setCity(hotel.getCity());
+        newHotel.setDescription(hotel.getDescription());
+        newHotel.setName(hotel.getName());
+        newHotel.setPicture(hotel.getPicture());
+        return newHotel;
+    }
+
+
 
 }

@@ -101,4 +101,8 @@ public class RoomService {
         return true;
     }
 
+    public RoomType selectRoomTypeByHotelIdAndType(String hotel_id){
+        return roomTypeDao.selectRoomTypeByHotelIdAndType(hotel_id);
+    }
+
 }

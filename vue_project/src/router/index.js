@@ -7,6 +7,7 @@ import Evaluation from "@/views/Function/Evaluation";
 import CustomerService from "@/views/Function/CustomerService";
 import HotelFirst from "@/components/Hotels/HotelFirst";
 import ManagerMain from "@/views/Manager/ManagerMain";
+// import home from "@/components/home";
 
 const router = createRouter({
     history: createWebHistory(),

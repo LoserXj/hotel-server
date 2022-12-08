@@ -24,3 +24,8 @@ logging:
     com.elio: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: userService,roomService # 项目启动时直接去拉取userservice的集群，多个用","隔开

@@ -35,7 +35,11 @@ public class HotelApplication {
         }
     }
 
-
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
 
 
 

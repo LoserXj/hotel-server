@@ -21,4 +21,6 @@ public interface RoomTypeDao {
     @Select("select * from roomType where hotel_id=#{hotel}, type=#{type},bedNum=#{bedNum},hasBreakfast=#{hasBreakfast},price<=#{high} ")
     List<Room> getByCondition(String hotel,String type,Integer bedNum,String hasBreakfast,Double high);
 
+    @Select("select * from room_type where hotel_id = #{hotel_id} and type = 0")
+    RoomType selectRoomTypeByHotelIdAndType(@Param("hotel_id")String hotel_id);
 }
