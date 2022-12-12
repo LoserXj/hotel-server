@@ -84,6 +84,7 @@ public class UserService {
     }
 
     public Manager selectManagerInfo(String tel){
+        System.out.println(managerDao.selectManagerByTel(tel));
         return managerDao.selectManagerByTel(tel);
     }
 

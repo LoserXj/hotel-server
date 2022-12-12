@@ -46,8 +46,8 @@ public class UserController {
     }
 
     @RequestMapping("/managerInfo")
-    public Manager selectManagerInfo(@Param("tel")String tel){
-        return userService.selectManagerInfo(tel);
+    public Manager selectManagerInfo(@Param("user_tel")String user_tel){
+        return userService.selectManagerInfo(user_tel);
     }
 
     @RequestMapping("/getCookie")

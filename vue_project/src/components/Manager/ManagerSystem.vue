@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     onInformation(){
-      alert("hhhh")
+
       this.$http.get('http://localhost:8081/user/managerInfo', {params: {user_tel: sessionStorage.getItem("user")}}).then(
           res => {
             let admin = res.data;
@@ -42,7 +42,9 @@ export default {
             this.name = admin.name
             this.admin_id = admin.id;
             this.telephone = admin.tel;
+            console.log(admin)
           }
+
       )
     },
 
