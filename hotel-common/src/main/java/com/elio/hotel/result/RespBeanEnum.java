@@ -25,7 +25,9 @@ public enum RespBeanEnum {
     REFUND_ERROR(214,"申请成功,请耐心等待"),
     SECKILL_SUCCESS(215,"抢购成功"),
     SECKILL_FAIL(216,"抢购失败"),
-    SECKILL_BUSY(217,"系统繁忙")
+    SECKILL_BUSY(217,"系统繁忙"),
+    POINT_SUCCESS(218,"兑换成功"),
+    POINT_ERROR(219,"积分不足")
 
     ;
 

@@ -1,9 +1,6 @@
 package com.elio.hotel.service;
 
-import com.elio.hotel.dao.ManagerAccountDao;
-import com.elio.hotel.dao.OrderDao;
-import com.elio.hotel.dao.RefundDao;
-import com.elio.hotel.dao.UserAccountDao;
+import com.elio.hotel.dao.*;
 import com.elio.hotel.domain.*;
 import com.elio.hotel.result.RespBean;
 import com.elio.hotel.service.exception.PlaceOrderException;
@@ -35,6 +32,12 @@ public class OrderService {
 
     @Autowired
     private RefundDao refundDao;
+
+    @Autowired
+    private PointDao pointDao;
+
+    @Autowired
+    private PointOrderDao pointOrderDao;
 
     public void insertUserAccount(User user){
         userAccountDao.insertUserAccount(user.getId(), user.getTel(),user.getName(),user.getPassword(),1000.00);
@@ -178,6 +181,10 @@ public class OrderService {
         userAccountDao.updateUserAccount(user_account.getBalance()-order.getTotal_price(),user.getId());
         managerAccountDao.updateManagerAccount(managerAccount.getBalance()+order.getTotal_price(), managerAccount.getHotel_id() );
         orderDao.updateOrder(order_id,order_time);
+        double point = order.getTotal_price()/10;
+        int pointInt = (int) point;
+        Point userPoint = pointDao.selectUserPointById(user.getId());
+        pointDao.updatePoint(pointInt,userPoint.getUser_id());
         return RespBean.pay_success();
     }
 
@@ -210,6 +217,18 @@ public class OrderService {
         }
         refundDao.insertRefund(order_id,user.getId(),user.getName(),order.getHotel_id(),0);
         return RespBean.refund_error();
+    }
+
+    public RespBean userPoint(String user_tel,String name,Integer point){
+        User user = selectUser(user_tel);
+        Point point1 = pointDao.selectUserPointById(user.getId());
+        if(point1.getPoint()<point){
+            return RespBean.point_error();
+        }
+        Integer balance = point1.getPoint() - point;
+        pointDao.updatePoint(balance,point1.getUser_id());
+        pointOrderDao.insertPointOrder(user.getId(),name,point);
+        return RespBean.point_success();
     }
 
 }

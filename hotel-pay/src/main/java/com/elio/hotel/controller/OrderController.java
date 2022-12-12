@@ -82,6 +82,11 @@ public class OrderController {
         return orderService.refund(user,order_id);
     }
 
+    @RequestMapping("/point")
+    public RespBean usePoint(@Param("user_tel")String user_tel,@Param("name")String name,@Param("point")Integer point){
+        return orderService.userPoint(user_tel,name,point);
+    }
+
     @RequestMapping("/seckill")
     public RespBean optimisticLockSold( @Param("user_id") Integer user_id,@Param("discount_id") Integer discount_id){
         log.info("user id = {},discount id = {}", user_id,discount_id);

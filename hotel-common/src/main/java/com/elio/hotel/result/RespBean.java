@@ -142,5 +142,13 @@ public class RespBean {
      return new RespBean(RespBeanEnum.SECKILL_BUSY.getCode(),RespBeanEnum.SECKILL_BUSY.getMessage(),null);
     }
 
+    public static RespBean point_error(){
+        return new RespBean(RespBeanEnum.POINT_ERROR.getCode(),RespBeanEnum.POINT_ERROR.getMessage(), null);
+    }
+
+    public static RespBean point_success(){
+        return new RespBean(RespBeanEnum.POINT_SUCCESS.getCode(),RespBeanEnum.POINT_SUCCESS.getMessage(),null);
+    }
+
 
 }

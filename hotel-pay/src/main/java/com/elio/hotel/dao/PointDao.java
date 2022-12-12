@@ -1,7 +1,9 @@
 package com.elio.hotel.dao;
 
+import com.elio.hotel.domain.Point;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,7 @@ public interface PointDao {
     @Update("update point set point = #{point} where user_id = #{user_id}")
     void updatePoint(@Param("point")Integer point,@Param("user_id")Integer user_id);
 
+    @Select("select * from user_point where user_id = #{user_id}")
+    Point selectUserPointById(@Param("user_id")Integer user_id);
 
 }

@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="完成了秒杀和高并发处理">
+    <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="完成了秒杀和高并发处理,十一点一十一更新一次">
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/PointOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/aa.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/public/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/Evaluation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/components/list/list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/vue_project.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project/src/components/Manager/ManagerSystem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/ManagerSystem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +231,7 @@
       <workItem from="1670604728619" duration="656000" />
       <workItem from="1670768127931" duration="6870000" />
       <workItem from="1670842484458" duration="4371000" />
-      <workItem from="1670847817551" duration="9746000" />
+      <workItem from="1670847817551" duration="12420000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -297,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670856840765</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="完成了秒杀和高并发处理,十一点一十一更新一次">
+      <created>1670857894172</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670857894172</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +350,8 @@
     <MESSAGE value="第一次交接" />
     <MESSAGE value="vue更新了删除了两个包" />
     <MESSAGE value="完成了秒杀和高并发处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了秒杀和高并发处理" />
+    <MESSAGE value="完成了秒杀和高并发处理,十一点一十一更新一次" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了秒杀和高并发处理,十一点一十一更新一次" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -337,6 +365,11 @@
           <url>file://$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java</url>
           <line>49</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
