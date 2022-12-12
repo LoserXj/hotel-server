@@ -1,6 +1,7 @@
 package com.elio.hotel.dao;
 
 import com.elio.hotel.domain.Room;
+import com.elio.hotel.domain.RoomInfo;
 import com.elio.hotel.domain.RoomType;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,7 @@ public interface RoomDao {
     @Select("select * from room where id = #{id}")
     Room selectRoomById(@Param("id")Integer id);
 
-
+    @Select("select a.position,b.type,b.price,b.hasBreakfast from (select * from room where hotel_id = #{hotel_id}) a , (select * from room_type where hotel_id = #{hotel_id}) b where a.type_id=b.type")
+    List<RoomInfo> getRoomInfo(String hotel_id);
 
 }

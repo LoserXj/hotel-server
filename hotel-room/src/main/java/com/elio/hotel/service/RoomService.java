@@ -6,6 +6,7 @@ import com.elio.hotel.dao.RoomDao;
 import com.elio.hotel.dao.RoomTypeDao;
 import com.elio.hotel.domain.Room;
 import com.elio.hotel.domain.RoomBookTime;
+import com.elio.hotel.domain.RoomInfo;
 import com.elio.hotel.domain.RoomType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -104,5 +105,7 @@ public class RoomService {
     public RoomType selectRoomTypeByHotelIdAndType(String hotel_id){
         return roomTypeDao.selectRoomTypeByHotelIdAndType(hotel_id);
     }
-
+    public List<RoomInfo> getRoomInfo(HttpServletRequest request) {
+        return roomDao.getRoomInfo(request.getParameter("id"));
+    }
 }

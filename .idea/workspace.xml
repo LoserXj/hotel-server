@@ -5,173 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af4ba5d-b3b9-4406-86e1-25402833c3b1" name="Changes" comment="vue更新了删除了两个包">
-      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Collection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/dao/HotelCollectionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/pojo/NewHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/DiscountRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/domain/RoomInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/DiscountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/DiscountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/dao/ManagerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/img/planFigure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/manager/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/manager/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/manager/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/assets/manager/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/BarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/ManagerApp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/ManagerSystem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/HotelApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/HotelApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-common/src/main/java/com/elio/hotel/result/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-hotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-hotel/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/controller/HotelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-hotel/src/main/java/com/elio/hotel/service/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-hotel/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-hotel/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/NacosRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/NacosRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/PayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/PayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/NacosOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/NacosOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/dao/PointDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-pay/src/main/java/com/elio/hotel/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/dao/RoomDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-room/src/main/java/com/elio/hotel/service/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/bundles/tinycolor.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/bundles/tinycolor.umd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/bundles/tinycolor.umd.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/bundles/tinycolor.umd.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/format-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/format-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/interfaces.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/interfaces.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/format-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/format-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/module/random.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/dist/random.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@ctrl/tinycolor/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/dist/floating-ui.core.umd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/core/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/core/src/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/dist/floating-ui.dom.umd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/utils/getOverflowAncestors.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/utils/getOverflowAncestors.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/utils/window.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@floating-ui/dom/src/utils/window.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/Cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/createError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/enhanceError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/normalizeHeaderName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/NacosUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/NacosUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/utils/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/utils/CookieUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/assets/style/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/components/Hotels/HotelFirst.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/components/Hotels/HotelFirst.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/components/HotelsByCity.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/components/Manager/CheckRecord.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/CheckRecord.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/components/Manager/ModifyRoom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/components/Manager/ModifyRoom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/components/SelectHotel.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/views/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/views/Main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_project/src/views/Manager/ManagerMain.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vue_project/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_project/src/views/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/images/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/images/login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/img/280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/img/img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/img/login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/img/login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/img/pic1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/assets/style/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/Hotels/HotelFirst.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/HotelsByCity.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/Manager/CheckRecord.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/Manager/ModifyRoom.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/SelectHotel.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/components/list/List.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Function/CustomerService.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Function/Evaluation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Function/OrderForm.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Main.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Manager/ManagerMain.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/src/views/Register.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_project1/project/vue.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +94,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-13&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA_PROJECT/Hotel-Server/vue_project1/project/src/components/list&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA_PROJECT/Hotel-Server/vue_project/src/components/Manager&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -222,7 +103,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.20410156&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.45331696&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;dce99afe7c050c9eb7866620018e0bff&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\JAVA_PROJECT\\Hotel-Server\\vue_project\\node_modules\\typescript\\lib&quot;,
     &quot;two.files.diff.last.used.file&quot;: &quot;D:/JAVA_PROJECT/Hotel-Server/vue_project/src/package.json&quot;,
@@ -231,11 +112,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\components\list" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\views\Manager" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\assets" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\photo" />
-      <recent name="D:\JAVA_PROJECT\Hotel-Server\hotel-room\src\main\resources" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project\src\components\Manager" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project\src\views\Manager" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project\src\assets\manager" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project\src\assets\img" />
+      <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project\src\components\Hotels" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JAVA_PROJECT\Hotel-Server\vue_project1\project\src\components\list" />
@@ -252,7 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Spring Boot.RoomApplication">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elio.hotel.test.test" />
       <module name="hotel-hotel" />
@@ -314,9 +195,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.HotelApplication" />
         <item itemvalue="Spring Boot.PayApplication" />
         <item itemvalue="Spring Boot.RoomApplication" />
+        <item itemvalue="Spring Boot.HotelApplication" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -365,7 +246,16 @@
       <workItem from="1670487142269" duration="1104000" />
       <workItem from="1670498235202" duration="1583000" />
       <workItem from="1670500030299" duration="7241000" />
-      <workItem from="1670507931356" duration="723000" />
+      <workItem from="1670507931356" duration="6991000" />
+      <workItem from="1670516264809" duration="3867000" />
+      <workItem from="1670552394070" duration="6701000" />
+      <workItem from="1670564577409" duration="1208000" />
+      <workItem from="1670597979816" duration="44000" />
+      <workItem from="1670598103157" duration="2108000" />
+      <workItem from="1670604728619" duration="656000" />
+      <workItem from="1670768127931" duration="6870000" />
+      <workItem from="1670842484458" duration="4371000" />
+      <workItem from="1670847817551" duration="8673000" />
     </task>
     <task id="LOCAL-00001" summary="maven插件管理以及包管理更加规范，实现了登录功能和注册功能">
       <created>1664870256688</created>
@@ -437,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670488088811</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="vue更新了删除了两个包">
+      <created>1670509090005</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670509090005</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,10 +366,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hotel-user/src/main/java/com/elio/hotel/controller/UserController.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="2" />
+          <line>55</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

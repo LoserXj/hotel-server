@@ -39,8 +39,8 @@ public class OrderService {
     public void insertUserAccount(User user){
         userAccountDao.insertUserAccount(user.getId(), user.getTel(),user.getName(),user.getPassword(),1000.00);
     }
-    public User selectUser(){
-        return restTemplate.getForObject("http://userService/nacos/getUser",User.class);
+    public User selectUser(String user_tel){
+        return restTemplate.postForObject("http://userService/nacos/getUser",user_tel,User.class);
     }
 
     public Hotel selectHotelById(Room room){
@@ -58,7 +58,7 @@ public class OrderService {
         return restTemplate.postForObject("http://roomService/nacos/selectRoomBookTimeByRoomId",room,RoomBookTime.class);
     }
 
-    public RespBean reserve(Integer room_id, String start_time, String end_time) throws ParseException {
+    public RespBean reserve(String user_tel,Integer room_id, String start_time, String end_time) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
         Date date_now = new Date(System.currentTimeMillis());
         String order_time=sdf.format(date_now);
@@ -71,7 +71,7 @@ public class OrderService {
         cal.setTime(date_end);
         long time2=cal.getTimeInMillis();
         long between_days=(time2-time1)/(1000*3600*24);
-        User user=selectUser();
+        User user=selectUser(user_tel);
         Room room=selectRoomById(room_id);
         RoomType roomType=selectRoomTypeByHotelAndType(room);
         RoomBookTime roomBookTime=selectRoomBookTimeByRoomId(room);

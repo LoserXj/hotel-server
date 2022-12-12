@@ -1,6 +1,4 @@
 <template>
-
-
   <el-container>
     <!--      <div>-->
     <!--      走马灯-->
@@ -12,15 +10,6 @@
       </el-carousel>
       <!--            <h3>图片</h3>-->
     </el-header>
-    <!--      </div>-->
-    <!--      分割线-->
-<!--    <div>-->
-<!--      <el-divider>-->
-<!--        &lt;!&ndash;          aaa&ndash;&gt;-->
-<!--      </el-divider>-->
-<!--    </div>-->
-
-    <!--      <div>-->
     <el-main>
       <!--          城市-->
       <div>
@@ -65,41 +54,42 @@ export default {
     return {
       city: '北京',
       // url: require('../assets/img/img.jpg'),
-      hotel: [
-        {
-          id: 0,
-          name: 'name',
-          address: 'xxx',
-          city: 'city',
-          picture: 'background.jpg',
-          description: '描述',
-        },
-        {
-          id: 1,
-          name: 'name',
-          address: 'xxx',
-          city: 'city',
-          picture: 'login.jpg',
-          description: '描述',
-        },
-        {
-          id: 2,
-          name: 'name',
-          address: 'xxx',
-          city: 'city',
-          picture: 'background.jpg',
-          description: '描述',
-        },
-        {
-          id: 3,
-          name: 'name',
-          address: 'xxx',
-          city: '北京',
-          picture: 'background.jpg',
-          description: '描述',
-        }
-      ],
-      // hotel: [],
+      // hotel: [
+      //   {
+      //     id: 0,
+      //     name: 'name',
+      //     address: 'xxx',
+      //     city: 'city',
+      //     picture: 'background.jpg',
+      //     description: '描述',
+      //
+      //   },
+      //   {
+      //     id: 1,
+      //     name: 'name',
+      //     address: 'xxx',
+      //     city: 'city',
+      //     picture: 'login.jpg',
+      //     description: '描述',
+      //   },
+      //   {
+      //     id: 2,
+      //     name: 'name',
+      //     address: 'xxx',
+      //     city: 'city',
+      //     picture: 'background.jpg',
+      //     description: '描述',
+      //   },
+      //   {
+      //     id: 3,
+      //     name: 'name',
+      //     address: 'xxx',
+      //     city: '北京',
+      //     picture: 'background.jpg',
+      //     description: '描述',
+      //   }
+      // ],
+      hotel: [],
       imagesbox: [
         {id: 0, idView: require('../assets/img/pic1.jpg')},
         {id: 1, idView: require('../assets/img/280.jpg')},
@@ -122,27 +112,22 @@ export default {
 
     onSubmit() {
 
-      // this.hotel[0].id = 0
-      // this.hotel[0].name = 'hotel.name'
-      // this.hotel[0].address = 'hotel.address'
-      // this.hotel[0].city = 'hotel.city'
-      // this.hotel[0].picture = 'background.jpg'
-      // this.hotel[0].description = 'hotel.description'
-
-      this.$http.get('http://localhost:8181/hotel/getHotel', {params: {city: this.city}}).then(
+      this.$http.get('http://localhost:8181/hotel/getHotel', {params: {city: this.city,user_tel: sessionStorage.getItem("user")}}).then(
           res => {
             //  res.data
             console.log(res.data[0])
-            let hotels = res.data;
-            for (let i = 0; i < 1; i++) {
-              let hotel = hotels[i];
-              this.hotel[i].id = i
-              this.hotel[i].name = hotel.name
-              this.hotel[i].address = hotel.address
-              this.hotel[i].city = hotel.city
-              this.hotel[i].picture = 'background.jpg';
-              this.hotel[i].description = hotel.description
-            }
+            // let hotels = res.data;
+            // for (let i = 0; i < 1; i++) {
+            //   let hotel = hotels[i];
+            //   this.hotel[i].id = i
+            //   this.hotel[i].name = hotel.name
+            //   this.hotel[i].address = hotel.address
+            //   this.hotel[i].city = hotel.city
+            //   this.hotel[i].picture = hotel.picture
+            //   this.hotel[i].description = hotel.description
+            // }
+            this.hotel = res.data
+            console.log(res.data)
             console.log('pic')
             console.log(this.hotel[0].picture)
           }

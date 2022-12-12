@@ -1,6 +1,7 @@
 package com.elio.hotel.controller;
 
 import com.elio.hotel.domain.Room;
+import com.elio.hotel.domain.RoomInfo;
 import com.elio.hotel.result.RespBean;
 import com.elio.hotel.service.RoomService;
 import lombok.extern.slf4j.Slf4j;
@@ -48,6 +49,11 @@ public class RoomController {
         boolean judge = (rooms !=null);
         return judge ? new RespBean(200,"查询成功",rooms) : new RespBean(400,"查询失败", null);
     }
-
-
+    @RequestMapping("/roomInfo")
+    public RespBean getRoomInfo(HttpServletRequest request){
+        List<RoomInfo> infos = roomService.getRoomInfo(request);
+        boolean judge = (infos!=null);
+        System.out.println(judge ? new RespBean(200,"查询成功",infos) : new RespBean(400,"查询失败",null));
+        return judge ? new RespBean(200,"查询成功",infos) : new RespBean(400,"查询失败",null);
+    }
 }

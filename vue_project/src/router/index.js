@@ -6,8 +6,10 @@ import OrderForm from "@/views/Function/OrderForm";
 import Evaluation from "@/views/Function/Evaluation";
 import CustomerService from "@/views/Function/CustomerService";
 import HotelFirst from "@/components/Hotels/HotelFirst";
-import ManagerMain from "@/views/Manager/ManagerMain";
-// import home from "@/components/home";
+import ManagerSystem from "@/components/Manager/ManagerSystem";
+import CheckRecord from "@/components/Manager/CheckRecord";
+import ModifyRoom from "@/components/Manager/ModifyRoom";
+import BarChart from "@/components/Manager/BarChart";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -42,7 +44,25 @@ const router = createRouter({
         },
         {
             path: '/manager',
-            component: ManagerMain
+            component: ManagerSystem
+        },
+        {
+            path: '/manager/DataAnalyse/1',
+            component: BarChart
+        },{
+            path: '/manager/DataAnalyse/2',
+            component: BarChart
+        },{
+            path: '/manager/DataAnalyse/3',
+            component: BarChart
+        },
+        {
+            path: '/manager/ModifyRoom',
+            component: ModifyRoom
+        },
+        {
+            path: '/manager/CheckRecord',
+            component: CheckRecord
         }
 
 

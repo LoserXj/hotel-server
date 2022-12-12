@@ -1,5 +1,4 @@
 package com.elio.hotel.utils;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +11,7 @@ import java.net.URLEncoder;
  *
  * @since 1.0.0
  */
-public final class CookieUtil {
+public final class CookieUtils {
 
     /**
      * 得到Cookie的值, 不编码

@@ -116,9 +116,9 @@ public class HotelService {
     public RoomType selectRoomTypeByHotelIdAndType(Hotel hotel){
         return restTemplate.postForObject("http://roomService/nacos/selectRoomTypeByHotelIdAndType",hotel,RoomType.class);
     }
-    public List<NewHotel> getNewHotel(List<Hotel> hotels) {
-        User user = getUser();
-        List<Collection> collections = selectCollectionByUserTel(user.getTel());
+    public List<NewHotel> getNewHotel(List<Hotel> hotels,String user_tel) {
+
+        List<Collection> collections = selectCollectionByUserTel(user_tel);
         HashMap<String, Integer> hashMap = new HashMap<>();
         for (Collection collection : collections) {
             hashMap.put(collection.getHotel_id(),1);

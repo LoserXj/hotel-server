@@ -130,6 +130,17 @@ public class RespBean {
         return new RespBean(RespBeanEnum.REFUND_SUCCESS.getCode(),RespBeanEnum.REFUND_SUCCESS.getMessage(), null);
     }
 
+    public static RespBean seckill_success(){
+        return new RespBean(RespBeanEnum.SECKILL_SUCCESS.getCode(), RespBeanEnum.SECKILL_SUCCESS.getMessage(), null);
+    }
+
+    public static RespBean seckill_error(){
+        return new RespBean(RespBeanEnum.SECKILL_FAIL.getCode(),RespBeanEnum.SECKILL_FAIL.getMessage(), null);
+    }
+
+    public static RespBean seckill_busy(){
+     return new RespBean(RespBeanEnum.SECKILL_BUSY.getCode(),RespBeanEnum.SECKILL_BUSY.getMessage(),null);
+    }
 
 
 }

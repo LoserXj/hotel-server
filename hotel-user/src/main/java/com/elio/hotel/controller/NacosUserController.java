@@ -1,12 +1,11 @@
 package com.elio.hotel.controller;
 
+import com.elio.hotel.domain.Manager;
 import com.elio.hotel.domain.User;
 import com.elio.hotel.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,12 +16,17 @@ public class NacosUserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/getUser")
-    public User getUserF( @CookieValue("USER_COOKIE")String userSessionID,HttpServletRequest request){
 
-        return (User)request.getSession().getAttribute(userSessionID);
+    @RequestMapping("/getUser")
+    public User getUser(@RequestBody String user_tel){
+        return (User) userService.selectUserByTel(user_tel);
     }
 
+
+    @RequestMapping(value = "/getManager",method = RequestMethod.POST)
+    public Manager getManager(@RequestBody String user_tel){
+        return userService.selectManagerInfo(user_tel);
+    }
 
 
 }

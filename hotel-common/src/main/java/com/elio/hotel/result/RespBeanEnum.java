@@ -22,7 +22,10 @@ public enum RespBeanEnum {
     PAY_ERROR(211,"支付失败"),
     PAY_SUCCESS(212,"支付成功"),
     REFUND_SUCCESS(213,"退款成功"),
-    REFUND_ERROR(214,"申请成功,请耐心等待")
+    REFUND_ERROR(214,"申请成功,请耐心等待"),
+    SECKILL_SUCCESS(215,"抢购成功"),
+    SECKILL_FAIL(216,"抢购失败"),
+    SECKILL_BUSY(217,"系统繁忙")
 
     ;
 

@@ -1,28 +1,24 @@
 <template>
-  <div>
-  <header_a></header_a>
-</div>
+  <div id="app">
+    <ManagerApp>
 
-  <div id="body">
-    <div id="app">
-      <router-view/>
-    </div>
+    </ManagerApp>
   </div>
 </template>
 
 <script>
-import header_a from "@/components/page/header_a";
 
+import ManagerApp from "@/components/Manager/ManagerApp";
 export default {
   name: 'App',
-  components: {header_a}
+  components: {ManagerApp},
 }
 </script>
 
 <style>
 #app {
   height: 800px;
-  background-image: url("@/assets/images/background.jpg");
+
   background-size: 100% 100%;
 }
 </style>
