@@ -10,6 +10,8 @@ import ManagerSystem from "@/components/Manager/ManagerSystem";
 import CheckRecord from "@/components/Manager/CheckRecord";
 import ModifyRoom from "@/components/Manager/ModifyRoom";
 import BarChart from "@/components/Manager/BarChart";
+import evaluationPage from "@/components/Hotels/evaluationPage";
+import store from "@/views/store";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -63,7 +65,16 @@ const router = createRouter({
         {
             path: '/manager/CheckRecord',
             component: CheckRecord
-        }
+        },
+        {
+            path: '/main/store',
+            component: store
+        },
+
+        {
+            path: '/main/evaluation',
+            component: evaluationPage
+        },
 
 
     ]

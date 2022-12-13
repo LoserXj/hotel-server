@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <header_a></header_a>
+  </div>
+
   <el-container>
     <!--      <div>-->
     <!--      走马灯-->
@@ -39,6 +43,7 @@
 
 
 <script>
+import header_a from "@/components/page/header_a";
 
 // import List from '../components/list/List'
 import List from "@/components/list/list";
@@ -49,7 +54,7 @@ console.log("我已初始化执行成功");
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Main',
-  components: {List},
+  components: {List,header_a},
   data() {
     return {
       city: '北京',
